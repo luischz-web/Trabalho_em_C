@@ -1,0 +1,26 @@
+//ex14
+#include <stdio.h>
+
+int main() {
+    char  nome;
+    int   idade;
+    float peso;
+    char  genero;
+
+    printf("Primeiro nome: ");
+    scanf("%49s", nome);
+    printf("Idade: ");
+    scanf("%d", &idade);
+    printf("Peso (kg): ");
+    scanf("%f", &peso);
+    printf("Genero (M/F): ");
+    scanf(" %c", &genero);
+
+    printf("\n===== DADOS CAPTURADOS =====\n");
+    printf("Nome   : %s\n", nome);
+    printf("Idade  : %d anos\n", idade);
+    printf("Peso   : %.1f kg\n", peso);
+    printf("Genero : %c\n", genero);
+
+    return 0;
+}

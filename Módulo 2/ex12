@@ -1,0 +1,24 @@
+//ex12
+#include <stdio.h>
+
+int main() {
+    const float preco_litro = 5.80f;
+    float distancia, litros, rendimento, custo_km;
+
+    printf("Distancia percorrida (km): ");
+    scanf("%f", &distancia);
+    printf("Combustivel consumido (litros): ");
+    scanf("%f", &litros);
+
+    if (litros > 0 && distancia > 0) {
+        rendimento = distancia / litros;
+        custo_km   = PRECO_LITRO / rendimento;
+
+        printf("\nRendimento      : %.2f km/l\n", rendimento);
+        printf("Custo por km    : R$ %.2f\n", custo_km);
+    } else {
+        printf("Valores invalidos: distancia e litros devem ser maiores que zero.\n");
+    }
+
+    return 0;
+}
