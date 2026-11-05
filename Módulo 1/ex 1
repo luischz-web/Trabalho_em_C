@@ -1,0 +1,16 @@
+//ex01
+#include <stdio.h>
+
+int main() {
+    int matricula = 20261001;
+    float estatura = 1.75;
+    char inicial = 'A';
+    char curso[50] = "Ciencia da Computacao";
+
+    printf("%d\n", matricula);
+    printf("%.2f\n", estatura);
+    printf("%c\n", inicial);
+    printf("%s\n", curso);
+
+    return 0;
+}

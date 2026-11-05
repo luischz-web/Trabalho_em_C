@@ -1,0 +1,14 @@
+//ex04
+#include <stdio.h>
+
+int main() {
+    int total_requisicoes = 15420;
+    float consumo_ram = 78.50;
+    char estado_ativo = 'A';
+    char protocolo[20] = "TCP/IP";
+
+    printf("Sumario de Integridade -> Requisicoes: %d | RAM: %.2f%% | Estado: %c | Protocolo: %s\n", 
+           total_requisicoes, consumo_ram, estado_ativo, protocolo);
+
+    return 0;
+}

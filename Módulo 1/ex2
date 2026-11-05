@@ -1,0 +1,14 @@
+//ex02
+#include <stdio.h>
+
+int main() {
+    float teclado = 89.90;
+    float mouse = 45.50;
+    float monitor = 850.00;
+
+    printf("%-10s R$ %.2f\n", "Teclado", teclado);
+    printf("%-10s R$ %.2f\n", "Mouse", mouse);
+    printf("%-10s R$ %.2f\n", "Monitor", monitor);
+
+    return 0;
+}

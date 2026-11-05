@@ -1,0 +1,16 @@
+//ex07
+#include <stdio.h>
+
+int main() {
+    char nome[20] = "LM7805";
+    float tensao = 5.0f;
+    int lote = 2024118;
+    char classe = 'A';
+
+    printf("Componente: %s\n", nome);
+    printf("Tensao: %.1fV\n", tensao);
+    printf("Lote: %d\n", lote);
+    printf("Classe: %c\n", classe);
+
+    return 0;
+}

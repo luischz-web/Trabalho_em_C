@@ -1,0 +1,13 @@
+//ex05
+#include <stdio.h>
+
+int main() {
+    char chave = '{';
+    char asterisco  = '*';
+    char ponto_virg = ';';
+
+    printf("A chave de abertura vale '%c', o asterisco vale '%c' e o ponto e virgula vale '%c'.\n",
+           chave, asterisco, ponto_virg);
+
+    return 0;
+}
