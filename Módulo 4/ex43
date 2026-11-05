@@ -1,0 +1,28 @@
+//ex43
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float nota1, nota2, media, soma = 0;
+
+    printf("Quantidade de alunos: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        printf("Digite as duas notas do aluno %d: ", i);
+        scanf("%f %f", &nota1, &nota2);
+
+        media = (nota1 + nota2) / 2;
+        soma += media;
+
+        if (media >= 6) {
+            printf("Aprovado\n");
+        } else {
+            printf("Reprovado\n");
+        }
+    }
+
+    printf("Media da turma: %.2f\n", soma / n);
+
+    return 0;
+}

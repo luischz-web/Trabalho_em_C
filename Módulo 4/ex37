@@ -1,0 +1,18 @@
+//ex37
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    long long fatorial = 1;
+
+    printf("Digite um numero: ");
+    scanf("%d", &n);
+
+    for (i = n; i >= 1; i--) {
+        fatorial *= i;
+    }
+
+    printf("Fatorial: %lld\n", fatorial);
+
+    return 0;
+}

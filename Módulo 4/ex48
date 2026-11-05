@@ -1,0 +1,45 @@
+//ex48
+#include <stdio.h>
+
+int main() {
+    int codigo, opcao;
+    float preco, total = 0, desconto, valor, troco;
+
+    printf("Digite o codigo do produto (0 para encerrar): ");
+    scanf("%d", &codigo);
+
+    while (codigo != 0) {
+        printf("Digite o preco: ");
+        scanf("%f", &preco);
+
+        total += preco;
+
+        printf("Digite o codigo do produto (0 para encerrar): ");
+        scanf("%d", &codigo);
+    }
+
+    printf("Total da compra: R$ %.2f\n", total);
+    printf("1 - Dinheiro\n");
+    printf("2 - Cartao\n");
+    printf("Escolha a forma de pagamento: ");
+    scanf("%d", &opcao);
+
+    if (opcao == 1) {
+        desconto = total * 0.05;
+        total -= desconto;
+
+        printf("Total com desconto: R$ %.2f\n", total);
+        printf("Valor entregue: ");
+        scanf("%f", &valor);
+
+        troco = valor - total;
+
+        printf("Troco: R$ %.2f\n", troco);
+    } else if (opcao == 2) {
+        printf("Total no cartao: R$ %.2f\n", total);
+    } else {
+        printf("Opcao invalida!\n");
+    }
+
+    return 0;
+}

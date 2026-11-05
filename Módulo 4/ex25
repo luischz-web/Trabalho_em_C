@@ -1,0 +1,21 @@
+//ex25
+#include <stdio.h>
+
+int main() {
+    float media, frequencia;
+
+    printf("Media semestral: ");
+    scanf("%f", &media);
+    printf("Frequencia (%%): ");
+    scanf("%f", &frequencia);
+
+    if (media >= 6.0 && frequencia >= 75.0) {
+        printf("\nSituacao: APROVADO.\n");
+    } else if (frequencia >= 75.0 && media >= 4.0 && media < 6.0) {
+        printf("\nSituacao: EM RECUPERACAO (exame).\n");
+    } else {
+        printf("\nSituacao: REPROVADO.\n");
+    }
+
+    return 0;
+}

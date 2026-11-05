@@ -1,0 +1,22 @@
+//ex32
+#include <stdio.h>
+
+int main() {
+    float renda, parcela;
+    int inadimplente;
+
+    printf("Renda mensal bruta (R$): ");
+    scanf("%f", &renda);
+    printf("Valor da parcela (R$): ");
+    scanf("%f", &parcela);
+    printf("Situacao cadastral (0 = adimplente, 1 = inadimplente): ");
+    scanf("%d", &inadimplente);
+
+    if (parcela <= renda * 0.30f && inadimplente == 0) {
+        printf("\nPARECER: credito APROVADO.\n");
+    } else {
+        printf("\nPARECER: credito RECUSADO.\n");
+    }
+
+    return 0;
+}

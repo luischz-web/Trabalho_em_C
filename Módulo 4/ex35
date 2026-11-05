@@ -1,0 +1,19 @@
+//ex35
+#include <stdio.h>
+
+int main() {
+    int inicio, fim, passo, i;
+
+    printf("Inferior, superior e passo: ");
+    scanf("%d %d %d", &inicio, &fim, &passo);
+
+    for (i = inicio; i <= fim; i += passo)
+        printf("%d ", i);
+    printf("\n");
+
+    for (i = fim; i >= inicio; i -= passo)
+        printf("%d ", i);
+    printf("\n");
+
+    return 0;
+}

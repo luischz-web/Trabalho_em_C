@@ -1,0 +1,26 @@
+//ex31
+#include <stdio.h>
+
+int main() {
+    float kwh, tarifa, total;
+
+    printf("Consumo mensal (kWh): ");
+    scanf("%f", &kwh);
+
+    if (kwh <= 100.0) {
+        tarifa = 0.40f;
+    } else if (kwh <= 250.0) {
+        tarifa = 0.65f;
+    } else {
+        tarifa = 0.90f;
+    }
+
+    total = (kwh * tarifa) + 15.00f;
+
+    printf("\nTarifa aplicada : R$ %.2f por kWh\n", tarifa);
+    printf("Consumo         : R$ %.2f\n", kwh * tarifa);
+    printf("Iluminacao publ.: R$ 15.00\n");
+    printf("Total da fatura : R$ %.2f\n", total);
+
+    return 0;
+}

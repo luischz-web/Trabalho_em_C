@@ -1,0 +1,26 @@
+//ex40
+#include <stdio.h>
+
+int main() {
+    int a1, r, n, i, termo;
+
+    printf("Digite o primeiro termo: ");
+    scanf("%d", &a1);
+
+    printf("Digite a razao: ");
+    scanf("%d", &r);
+
+    printf("Digite a quantidade de termos: ");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        termo = a1 + (i * r);
+        printf("%d", termo);
+
+        if (i < n - 1) {
+            printf(", ");
+        }
+    }
+
+    return 0;
+}

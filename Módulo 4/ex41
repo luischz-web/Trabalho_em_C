@@ -1,0 +1,22 @@
+//ex41
+#include <stdio.h>
+
+int main() {
+    int numero, soma = 0, contador = 0;
+
+    printf("Digite um numero (0 para encerrar): ");
+    scanf("%d", &numero);
+
+    while (numero != 0) {
+        soma += numero;
+        contador++;
+
+        printf("Digite outro numero: ");
+        scanf("%d", &numero);
+    }
+
+    printf("Quantidade: %d\n", contador);
+    printf("Soma: %d\n", soma);
+
+    return 0;
+}

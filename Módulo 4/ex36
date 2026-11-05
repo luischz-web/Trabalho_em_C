@@ -1,0 +1,20 @@
+//ex36
+#include <stdio.h>
+
+int main() {
+    int k, i, pares = 0, impares = 0;
+
+    printf("K: ");
+    scanf("%d", &k);
+
+    for (i = 1; i <= k; i++) {
+        if (i % 2 == 0)
+            pares++;
+        else
+            impares++;
+    }
+
+    printf("Pares: %d\nImpares: %d\n", pares, impares);
+
+    return 0;
+}
