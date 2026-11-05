@@ -1,0 +1,20 @@
+//ex19
+#include <stdio.h>
+
+int main() {
+    float numerador, denominador, quociente;
+
+    printf("Digite o numerador: ");
+    scanf("%f", &numerador);
+    printf("Digite o denominador: ");
+    scanf("%f", &denominador);
+
+    if (denominador != 0.0) {
+        quociente = numerador / denominador;
+        printf("\nResultado: %.2f / %.2f = %.2f\n", numerador, denominador, quociente);
+    } else {
+        printf("\nErro matematico: divisao por zero nao e permitida.\n");
+    }
+
+    return 0;
+}

@@ -1,0 +1,22 @@
+//ex24
+#include <stdio.h>
+
+int main() {
+    float horas, valor_hora, salario, extras;
+
+    printf("Horas trabalhadas na semana: ");
+    scanf("%f", &horas);
+    printf("Valor da hora padrao (R$): ");
+    scanf("%f", &valor_hora);
+
+    if (horas > 40.0) {
+        extras  = horas - 40.0;
+        salario = (40.0 * valor_hora) + (extras * valor_hora * 1.5);
+    } else {
+        salario = horas * valor_hora;
+    }
+
+    printf("\nSalario semanal total: R$ %.2f\n", salario);
+
+    return 0;
+}

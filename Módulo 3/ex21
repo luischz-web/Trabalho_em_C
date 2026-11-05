@@ -1,0 +1,21 @@
+//ex21
+#include <stdio.h>
+
+int main() {
+    float total, desconto = 0.0f, final;
+
+    printf("Valor da compra (R$): ");
+    scanf("%f", &total);
+
+    if (total > 250.0) {
+        desconto = total * 0.10f;
+    }
+
+    final = total - desconto;
+
+    printf("\nValor bruto : R$ %.2f\n", total);
+    printf("Desconto : R$ %.2f\n", desconto);
+    printf("Total a pagar: R$ %.2f\n", final);
+
+    return 0;
+}

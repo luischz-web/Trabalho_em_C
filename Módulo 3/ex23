@@ -1,0 +1,17 @@
+//ex23
+#include <stdio.h>
+
+int main() {
+    int estoque;
+
+    printf("Saldo atual: ");
+    scanf("%d", &estoque);
+
+    if (estoque < 50) {
+        printf("\nALERTA: estoque abaixo do minimo de seguranca (50). Reposicao urgente necessaria!\n");
+    } else {
+        printf("\nEstoque estavel: nivel dentro do parametro de seguranca.\n");
+    }
+
+    return 0;
+}

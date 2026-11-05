@@ -1,0 +1,17 @@
+//ex17
+#include <stdio.h>
+
+int main() {
+    int idade;
+
+    printf("Digite a idade: ");
+    scanf("%d", &idade);
+
+    if (idade >= 18) {
+        printf("Apto a dirigir.\n");
+    } else {
+        printf("Nao permitido: menor de 18 anos nao pode iniciar o processo de habilitacao.\n");
+    }
+
+    return 0;
+}
